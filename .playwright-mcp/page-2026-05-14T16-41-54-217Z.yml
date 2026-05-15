@@ -1,0 +1,71 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e5]:
+      - heading "React Component Generator" [level=1] [ref=e7]
+      - generic [ref=e9]:
+        - generic [ref=e15]:
+          - generic [ref=e53]:
+            - generic [ref=e56]: Create a user profile card with an avatar, name, role, bio, and social media links
+            - img [ref=e59]
+          - generic [ref=e75]:
+            - img [ref=e78]
+            - generic [ref=e83]:
+              - generic [ref=e86]: str_replace_editor
+              - separator [ref=e87]
+              - generic [ref=e88]:
+                - paragraph [ref=e89]: "Done! I've created a user profile card with:"
+                - list [ref=e90]:
+                  - listitem [ref=e91]: Avatar image with border and shadow
+                  - listitem [ref=e92]: Name and role display
+                  - listitem [ref=e93]: Bio section
+                  - listitem [ref=e94]: Social media links (Twitter, LinkedIn, GitHub, Email) with hover effects
+                  - listitem [ref=e95]: Action button
+                  - listitem [ref=e96]: Gradient background and modern styling with Tailwind CSS
+          - generic [ref=e835]:
+            - generic [ref=e838]: Fix the app - remove the lucide-react import and replace the Github, Linkedin, Twitter, and Mail icons with inline SVG elements instead
+            - img [ref=e841]
+          - generic [ref=e857]:
+            - img [ref=e860]
+            - generic [ref=e865]:
+              - generic [ref=e868]: str_replace_editor
+              - separator [ref=e869]
+              - paragraph [ref=e871]: Done! Removed the lucide-react import and replaced all icons with inline SVG elements. Also replaced the external image with an avatar using initials.
+        - generic [ref=e23]:
+          - textbox "Describe the React component you want to create..." [ref=e24]
+          - button [disabled] [ref=e25]:
+            - img [ref=e26]
+    - separator [ref=e29]
+    - generic [ref=e31]:
+      - generic [ref=e32]:
+        - tablist [ref=e34]:
+          - tab "Preview" [selected] [ref=e35]
+          - tab "Code" [ref=e36]
+        - generic [ref=e37]:
+          - button "Toggle dark mode" [ref=e38]:
+            - img
+          - button "Sign In" [ref=e39]
+          - button "Sign Up" [ref=e40]
+      - iframe [ref=e834]:
+        - generic [ref=f4e6]:
+          - generic [ref=f4e8]: SA
+          - heading "Sarah Anderson" [level=2] [ref=f4e9]
+          - paragraph [ref=f4e10]: Product Designer
+          - paragraph [ref=f4e11]: Passionate about creating beautiful and intuitive user experiences. Coffee enthusiast and design advocate.
+          - generic [ref=f4e12]:
+            - link "Twitter" [ref=f4e13] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=f4e14]
+            - link "LinkedIn" [ref=f4e16] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=f4e17]
+            - link "GitHub" [ref=f4e20] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=f4e21]
+            - link "Email" [ref=f4e23] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=f4e24]
+          - button "View Profile" [ref=f4e27] [cursor=pointer]
+  - alert [ref=e52]
+  - generic [ref=e400]:
+    - alert
+    - alert
