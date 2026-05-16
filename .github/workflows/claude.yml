@@ -30,6 +30,9 @@ jobs:
         with:
           fetch-depth: 1
 
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
       - name: Project Setup
         run: |
           npm install
@@ -37,8 +40,7 @@ jobs:
           npm run dev:daemon &
           sleep 10
 
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      
 
       - name: Run Claude Code
         id: claude
