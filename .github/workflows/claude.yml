@@ -46,7 +46,7 @@ jobs:
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
 
-          custom_instructions:
+          custom_instructions: |
             The project is already set up with all dependencies installed.
             The server is already running at localhost:3000. Logs from it
             are being written to logs.txt. If needed, you can query the
@@ -67,10 +67,9 @@ jobs:
               }
             }
 
-          allowed_tools: "Bash(npm:*),Bash(sqlite3:*),mcp__playwright__browser_snapshot,mcp__playwright__browser_click,mcp__playwright__browser_fill,mcp__playwright__browser_navigate,mcp__playwright__browser_wait_for_load_stateBash(npm install),Bash(npm run dev:daemon),Bash(curl http://localhost:3000), Bash(npm install),Bash(npm run dev:daemon),Bash(curl http://localhost:3000)"
+          # Вот здесь была главная ошибка. Теперь всё четко через запятую:
+          allowed_tools: "Bash(npm *),Bash(curl *),Bash(sqlite3 *),mcp__playwright__browser_snapshot,mcp__playwright__browser_click,mcp__playwright__browser_fill,mcp__playwright__browser_navigate,mcp__playwright__browser_wait_for_load_state"
 
-
-          # This is an optional setting that allows Claude to read CI results on PRs
           additional_permissions: |
             actions: read
 
