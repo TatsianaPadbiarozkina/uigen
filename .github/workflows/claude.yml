@@ -31,15 +31,15 @@ jobs:
           fetch-depth: 1
 
       - name: Project Setup
-        run:
+        run: |
           npm install
           npm run setup
-          npm run dev:daemon
+          npm run dev:daemon &
           sleep 10
 
       - name: Checkout repository
         uses: actions/checkout@v4
-        
+
       - name: Run Claude Code
         id: claude
         uses: anthropics/claude-code-action@v1
